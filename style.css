@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,4 +17,50 @@ img, canvas {
   display: block;
   margin: 0 auto;
   padding: 0;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for overlapping elements */
+#overlay-container {
+  position: relative;
+  width: 50%; /* Adjust to your needs */
+  margin: 0 auto;
+  /* margin: 25vh auto 0 auto; */
+}
+
+/* Both image and canvas will fill the container */
+#sigil, canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* optional; remove if you want to scale canvas */
+  display: block;
+}
+
+#sigil {
+  z-index: 0;
+}
+
+canvas {
+  position: absolute;
+  top: 200px; /* move canvas down by 200 pixels */
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
 }
