@@ -1,6 +1,6 @@
 /// a circle (or maybe variable shape) that hovers around randomly
 class NavNode {
-    constructor(x, y, speed = 0.01, boundSize = 50, text, link) {
+    constructor(x, y, speed, boundSize, text, link) {
         this.anchorx = x;
         this.anchory = y;
 
@@ -19,6 +19,8 @@ class NavNode {
 
         this.rw = Math.min(textWidth(this.text), this.maxwidth);
         this.rh = this.textHeight(this.text);
+        
+        this.rradius = random(0, 50);
     }
 
     update() {
@@ -40,7 +42,7 @@ class NavNode {
         textWrap(WORD);
 
         fill(0);
-        rect(this.x, this.y, this.rw + 4, this.rh);
+        rect(this.x, this.y, this.rw + 4, this.rh, this.rradius);
         fill(255);
         text(this.text, this.x, this.y, this.maxwidth);
     }
@@ -53,8 +55,6 @@ class NavNode {
 
         if (lowX <= mouseX && mouseX <= highX &&
             lowY <= mouseY && mouseY <= highY) {
-            
-            console.log(this.text);
             window.open(this.link, '_blank');
         }
     }

@@ -20,14 +20,6 @@ function setup() {
     let textlink = links[i].split('#->#');
     if (textlink.length != 2) continue;
 
-    // x, y, speed, boundSize, text, link
-    // nodes.push(new NavNode(
-    //   constrain(randomGaussian(width / 2, 175), boundSize, width - boundSize),
-    //   constrain(randomGaussian(height / 2, 150), boundSize, height - boundSize),
-    //   random(0.0001, 0.005), boundSize,
-    //   textlink[0].trim(), // text
-    //   textlink[1].trim() // link
-    // ));
     nodes.push(new NavNode(
       constrain(randomGaussian(width / 2, 350), boundSize * 2, width - boundSize * 2),
       constrain(randomGaussian(height / 2, 400), boundSize * 2, height - boundSize * 2),
