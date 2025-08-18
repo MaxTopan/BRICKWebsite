@@ -1,20 +1,21 @@
 .song-group {
     margin:auto;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
 }
 
 .song-name {
     font-weight: bold;
-    padding: 0.5rem;
+    padding: 1.2vmin;
 }
 
 .song-audio {
-    padding: 0.5rem;
+    padding-top: 1.2vmin;
+    padding-bottom: 1.2vmin;
 }
 
 .song-lyrics {
-    padding: 0.5rem;
+    padding: 1.2vmin;
 }

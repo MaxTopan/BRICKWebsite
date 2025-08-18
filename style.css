@@ -17,7 +17,6 @@ p {
 #overlay-container {
   position: relative;
   width: 45%;
-  /* Adjust to your needs */
   margin: auto;
 }
 
@@ -49,7 +48,7 @@ canvas {
 /* NAVBAR STYLING */
 
 #navbar {
-  padding-bottom: 3rem;
+  padding-bottom: 7.5vh;
 }
 
 ul {
@@ -60,8 +59,8 @@ ul {
 
 li {
   display: inline-block;
-  margin-right: 2.5rem;
-  margin-left: 2.5rem;
+  margin-right: 3vw;
+  margin-left: 3vw;
 }
 
 a::before {
