@@ -17,10 +17,11 @@ class NavNode {
         this.maxwidth = 120;
         textFont("Courier New");
 
-        this.rw = Math.min(textWidth(this.text), this.maxwidth);
-        this.rh = this.textHeight(this.text);
+        const padding = 10
+        this.rw = Math.min(textWidth(this.text), this.maxwidth) + padding;
+        this.rh = this.textHeight(this.text) + padding;
         
-        this.rradius = random(0, 50);
+        this.rradius = 30;
     }
 
     update() {

@@ -9,7 +9,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight / 2);
+  createCanvas(windowWidth, windowHeight / 1.3);
   stroke(255);
   fill(0);
   textFont("Courier New");
@@ -21,8 +21,8 @@ function setup() {
     if (textlink.length != 2) continue;
 
     nodes.push(new NavNode(
-      constrain(randomGaussian(width / 2, 350), boundSize * 2, width - boundSize * 2),
-      constrain(randomGaussian(height / 2, 400), boundSize * 2, height - boundSize * 2),
+      constrain(randomGaussian(width / 2, 300), boundSize * 2, width - boundSize * 2),
+      constrain(randomGaussian(height / 2, 250), boundSize * 2, height - boundSize * 2),
       random(0.0001, 0.005), boundSize,
       textlink[0].trim(), // text
       textlink[1].trim() // link
