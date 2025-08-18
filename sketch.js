@@ -58,7 +58,7 @@ function draw() {
   }
 }
 
-function mousePressed() {
+function mouseClicked() {
   for (let i = 0; i < nodes.length; i++) {
     nodes[i].clicked();
   }
