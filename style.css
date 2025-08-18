@@ -56,14 +56,13 @@ li {
   margin-right: 2.5rem;
   margin-left: 2.5rem;
 }
-li a::before {
+a::before {
   content:"["
 }
-li a::after {
+a::after {
   content:"]"
 }
-
-li a {
+a {
   text-decoration: none;
 }
 
