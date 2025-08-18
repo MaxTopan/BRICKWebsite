@@ -17,7 +17,6 @@ p {
   position: relative;
   width: 45%; /* Adjust to your needs */
   margin: auto;
-  /* border: 2px white dotted; */
 }
 
 /* Both image and canvas will fill the container */
@@ -31,8 +30,6 @@ p {
 
 #sigil {
   z-index: 0;
-  /* border: 1px hotpink solid; */
-  /* left:50%; */
   right:50%;
 }
 
@@ -44,3 +41,50 @@ canvas {
   display: block;
   z-index: 1;
 }
+
+
+/* NAVBAR STYLING */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
+li a::before {
+  content:"["
+}
+li a::after {
+  content:"]"
+}
+
+li a {
+  text-decoration: none;
+}
+
+ /* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: darkgreen;
+}
+
+/* mouse over link */
+a:hover {
+  color: darkgreen;
+}
+
+/* selected link */
+a:active {
+  color: white;
+} 
+
+/* END NAVBAR STYLING */
