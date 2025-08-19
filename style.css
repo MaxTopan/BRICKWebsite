@@ -73,6 +73,7 @@ a::after {
 
 a {
   text-decoration: none;
+  color:darkgreen;
 }
 
 /* unvisited link */
