@@ -76,21 +76,6 @@ a {
   color:darkgreen;
 }
 
-/* unvisited link */
-a:link {
-  color: white;
-}
-
-/* visited link */
-a:visited {
-  color: darkgreen;
-}
-
-/* mouse over link */
-a:hover {
-  color: darkgreen;
-}
-
 /* selected link */
 a:active {
   color: white;
