@@ -49,6 +49,57 @@ canvas {
 
 #navbar {
   padding-bottom: 7.5vh;
+  /* overflow: hidden; */
+}
+
+/* The dropdown container */
+.dropdown {
+  margin-bottom: 0;
+  /* position:relative; */
+}
+
+/* Dropdown button */
+.dropdown .dropdown-link {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+#navbar a:hover,
+.dropdown:hover .dropdown-link {
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  text-align: center;
+  width: 7rem;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.25rem 0;
+  background-color: black;
+  position: relative;
+}
+
+.dropdown-content a:hover {
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 ul {
@@ -73,7 +124,7 @@ a::after {
 
 a {
   text-decoration: none;
-  color:darkgreen;
+  color: darkgreen;
 }
 
 /* selected link */
