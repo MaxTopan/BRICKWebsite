@@ -9,7 +9,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight / 1.3);
+  createCanvas(windowWidth, windowHeight);
   stroke(255);
   fill(0);
   textFont("Courier New");

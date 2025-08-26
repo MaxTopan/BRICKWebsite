@@ -23,16 +23,21 @@ p {
 /* Both image and canvas will fill the container */
 #sigil,
 canvas {
-  position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   display: block;
 }
 
 #sigil {
   z-index: 0;
-  right: 50%;
+  padding-bottom: 3vw;
+  width: 70%;
+  min-width: 200px;
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  /* right: 50%; */
+  /* padding: 3vw; */
 }
 
 canvas {

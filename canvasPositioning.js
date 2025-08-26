@@ -6,7 +6,7 @@ function positionCanvasBelowImage() {
 
     // Ensure the image has loaded before measuring
     if (img.complete) {
-        const offset = img.offsetHeight * 0.65; // how far down the page it is
+        const offset = img.offsetHeight * 0.55; // how far down the page it is
         canvas.style.position = 'absolute';
         canvas.style.top = offset + 'px';
         canvas.style.left = '0';
