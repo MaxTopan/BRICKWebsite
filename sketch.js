@@ -33,21 +33,21 @@ function setup() {
 
 function draw() {
   clear();
-  
+
   // draw connection lines between link nodes
   for (let i = 0; i < nodes.length; i++) {
-    
+
     // draw connection lines between top of sketch and link nodes
     //line(width / 2, 0, nodes[i].x, nodes[i].y);
-    
+
     nav = nodes[i];
-    
+
     r = floor(randomGaussian(i, 1)) % nodes.length;
     if (r < 0) r = 0;
-    
+
     // draw to random node
     line(nav.x, nav.y, nodes[r].x, nodes[r].y);
-    
+
     // draw to next node in cycle
     line(nav.x, nav.y, nodes[(i + 1) % nodes.length].x, nodes[(i + 1) % nodes.length].y);
   }
@@ -59,7 +59,14 @@ function draw() {
 }
 
 function mouseClicked() {
+  let maxNum = -1;
   for (let i = 0; i < nodes.length; i++) {
-    nodes[i].clicked();
+    if (nodes[i].isClicked()) {
+      maxNum = i;
+    }
+  }
+  
+  if (maxNum > -1) {
+    nodes[maxNum].click();
   }
 }

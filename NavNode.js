@@ -20,7 +20,7 @@ class NavNode {
         const padding = 10
         this.rw = Math.min(textWidth(this.text), this.maxwidth) + padding;
         this.rh = this.textHeight(this.text) + padding;
-        
+
         this.rradius = 30;
     }
 
@@ -48,7 +48,7 @@ class NavNode {
         text(this.text, this.x, this.y, this.maxwidth);
     }
 
-    clicked() {
+    isClicked() {
         let lowX = this.x - this.rw / 2;
         let lowY = this.y - this.rh / 2;
         let highX = this.x + this.rw / 2;
@@ -56,8 +56,12 @@ class NavNode {
 
         if (lowX <= mouseX && mouseX <= highX &&
             lowY <= mouseY && mouseY <= highY) {
-            window.open(this.link, '_blank');
+            return true;
         }
+    }
+
+    click() {
+        window.open(this.link, '_blank');
     }
 
     textHeight(text) {
