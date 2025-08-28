@@ -2,17 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[BRICK] - Shows</title>
-    <link rel="icon" type="image/x-icon" href="assets/brickfavicon.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="shows.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[BRICK] - Shows</title>
+  <link rel="icon" type="image/x-icon" href="assets/brickfavicon.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="shows.css">
+  <script src="libraries/p5.min.js"></script>
+  <script src="shows.js"></script>
 </head>
 
 <body>
-    <h2>[SHOWS]</h2>
-    <div id="navbar">
+  <h2>[SHOWS]</h2>
+  <div id="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="music.html">Music</a></li>
@@ -20,22 +22,18 @@
       <li><a href="merch.html">Merch</a></li>
     </ul>
   </div>
-    
-    <h3>[UPCOMING SHOWS]</h3>
-    <div class="show-details">
-        <p class="show-date">05/09/2025</p>
-        <p class="show-location">Green Door Store</p>
-        <p class="show-lineup">HIRS, Death Goals, Leibniz, Misgendered</p>
-        <a class="show-ticket-link" target="_blank" href="https://deathbeforedetransition.bigcartel.com/product/hirs-death-goals-more-0509">Tix Here</a>
-    </div>
 
-    <br/>
+  <h3>[UPCOMING SHOWS]</h3>
+  <div id="upcoming-shows">
+    <p>[loading]</p>
+  </div>
 
-    <h3>[PAST SHOWS]</h3>
-    <div class="show-details">
-        <p class="show-date">21/08/2025</p>
-        <p class="show-location">The Cowley Club</p>
-    </div>
+  <br />
+
+  <h3>[PAST SHOWS]</h3>
+  <div id="past-shows">
+    <p>[loading]</p>
+  </div>
 </body>
 
 </html>

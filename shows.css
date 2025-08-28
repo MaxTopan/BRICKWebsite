@@ -5,7 +5,3 @@
     padding-top: 4vh;
     padding-bottom: 4vh;
 }
-
-.show-lineup::before {
-    content: "With: "
-}
