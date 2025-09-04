@@ -84,6 +84,7 @@ canvas {
 .dropdown-content {
   display: none;
   position: absolute;
+  padding: 0.25rem 0rem;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -94,7 +95,7 @@ canvas {
 
 .dropdown-content a {
   display: block;
-  padding: 0.25rem 0;
+  padding: 0.25rem 0rem;
   background-color: black;
   position: relative;
 }
