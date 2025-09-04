@@ -1,3 +1,6 @@
-ShowID,Date,Location,Lineup,OtherDetails,TicketLink
-0,2025-08-21,The Cowley Club,,,
-1,2025-09-05,Green Door Store,"HIRS, Death Goals, Leibniz, Misgendered",,https://deathbeforedetransition.bigcartel.com/product/hirs-death-goals-more-0509
+ShowID,Visible,Date,Location,Lineup,OtherDetails,TicketLink
+0,Yes,2025-08-21,The Cowley Club,,,
+1,Yes,2025-09-05,Green Door Store,"HIRS, Death Goals, Leibniz, Misgendered",,https://deathbeforedetransition.bigcartel.com/product/hirs-death-goals-more-0509
+2,No,2025-09-20,Camp Trans,,"18/09/2025 - 21/09/2025",
+3,No,2025-10-31,The Cowley Club,"The Wokerati Party, The Glitterbombs",,
+4,No,2025-11-20,Fuel,,,

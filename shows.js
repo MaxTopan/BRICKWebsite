@@ -16,7 +16,11 @@ function setup() {
     let upcomingShowHtml = "";
 
     for (let i = 0; i < rowCount; i++) {
-        // ShowID,Date,Location,Lineup,OtherDetails,TicketLink
+        if (shows.get(i, "Visible") === "No") {
+            continue;
+        }
+
+        // ShowID,Visible,Date,Location,Lineup,OtherDetails,TicketLink
         let date = new Date(shows.get(i, "Date"));
         let location = shows.get(i, "Location");
         let lineup = shows.get(i, "Lineup");
