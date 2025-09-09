@@ -1,7 +1,0 @@
-- mailing list
-- tech rider
-- bootlegs
-    - do a folder for pictures 
-    - match up with audio + pictures using file names (find a way to automate getting the raw from github)
-- photos
-    - folder for photos with 
