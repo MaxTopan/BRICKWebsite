@@ -27,9 +27,20 @@ function setup() {
         let otherDetails = shows.get(i, "OtherDetails");
         let ticketLink = shows.get(i, "TicketLink");
         let ticketHtml = "";
+        let videoID = shows.get(i, "VideoID");
+        let videoHtml = "";
 
         if (ticketLink && date > now) {
             ticketHtml = `<a href="${ticketLink}" target="_blank">Tix Here</a>`
+        }
+
+        if (videoID) {
+            videoHtml = `<div class="wrapper">
+                            <div class="h_iframe">
+                                <iframe height="2" width="2" src="http://www.youtube.com/embed/${videoID}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>`
+
         }
 
         if (lineup) {
@@ -43,10 +54,11 @@ function setup() {
             <p>${lineup}</p>
             <p>${otherDetails}</p>
             ${ticketHtml}
-            </div>`
+            ${videoHtml}
+        </div>`
 
         if (date < now) { // past shows
-            pastShowHtml += currHtml;
+            pastShowHtml = currHtml + pastShowHtml;
         } else { // upcoming shows
             upcomingShowHtml += currHtml;
         }
