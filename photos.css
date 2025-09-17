@@ -51,3 +51,18 @@ a::before {
 a::after {
   content:"";
 }
+
+li::before {
+  content:"[";
+  color:darkgreen;
+}
+li::after {
+  content:"]";
+  color:darkgreen;
+}
+li:hover::before {
+  color:white;
+}
+li:hover::after {
+  color:white;
+}
