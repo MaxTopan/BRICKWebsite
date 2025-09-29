@@ -1,6 +1,10 @@
-ShowID,Visible,Date,Location,Lineup,OtherDetails,TicketLink,VideoID
-0,Yes,2025-08-21,The Cowley Club,,,,DuONRldNowc
-1,Yes,2025-09-05,Green Door Store,"HIRS, Death Goals, Leibniz, Misgendered",,https://deathbeforedetransition.bigcartel.com/product/hirs-death-goals-more-0509,6uxlc0xwQvE
-2,Yes,2025-09-19,Camp Trans,,,,
-3,No,2025-10-31,The Cowley Club,"The Wokerati Party, The Glitterbombs",,,
-4,No,2025-11-20,Fuel,"Misgendered, Shishu, Perp Walk, Monika Badly",,,
+ShowID,Visible,Date,Venue,City,Lineup,OtherDetails,TicketLink,VideoID
+0,Yes,2025-08-21,The Cowley Club - Brighton,,,,,DuONRldNowc
+1,Yes,2025-09-05,Green Door Store,Brighton,"HIRS, Death Goals, Leibniz, Misgendered",,https://deathbeforedetransition.bigcartel.com/product/hirs-death-goals-more-0509,6uxlc0xwQvE
+2,Yes,2025-09-19,Camp Trans,,,,,
+3,Yes,2025-10-25,Matchstick Piehouse,Deptford,,,,,
+4,Yes,2025-10-31,The Cowley Club,Brighton,"The Wokerati Party, The Glitterbombs",,,
+5,Yes,2025-11-20,Fuel,Cardiff,"Misgendered, Shishu, Perp Walk, Monika Badly",,,
+6,Yes,2025-11-21,"Birmingham, TBC",,"Misgendered",,,,
+7,Yes,2025-11-23,Hope & Ruin,Brighton,"Tension, Misgendered",,,,
+8,Yes,2025-12-17,Matchstick Piehouse,Deptford,,,,,

@@ -22,7 +22,8 @@ function setup() {
 
         // ShowID,Visible,Date,Location,Lineup,OtherDetails,TicketLink
         let date = new Date(shows.get(i, "Date"));
-        let location = shows.get(i, "Location");
+        let city = shows.get(i, "City");
+        let venue = shows.get(i, "Venue")
         let lineup = shows.get(i, "Lineup");
         let otherDetails = shows.get(i, "OtherDetails");
         let ticketLink = shows.get(i, "TicketLink");
@@ -50,7 +51,7 @@ function setup() {
         let currHtml = `
         <div class="show-details">
             <p>${date.toLocaleDateString()}</p>
-            <p>${location}</p>
+            <p>${venue} - ${city}</p>
             <p>${lineup}</p>
             <p>${otherDetails}</p>
             ${ticketHtml}
