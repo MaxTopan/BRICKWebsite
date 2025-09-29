@@ -1,3 +1,13 @@
+#disclaimer {
+    margin: auto;
+    width: 42vw;
+    min-width:340px;
+}
+#disclaimer p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .bootleg-details {
     margin: auto;
     padding-left: 12.5vw;
@@ -7,6 +17,19 @@
 }
 
 .bootleg-audio {
-    padding-top: 1.2vmin;
-    padding-bottom: 1.2vmin;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bootleg-details img {
+    width: 25vw;
+    min-width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bootleg-details .description, .bootleg-audio {
+    width: 30vw;
+    min-width: 250px;
+    margin: auto;
 }

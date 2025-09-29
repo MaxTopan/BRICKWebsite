@@ -1,29 +1,29 @@
 [
     {
         "ID": 0,
-        "Date": "01/02/03",
-        "Artist": "Artist1",
-        "Location": "Location1",
-        "Description": "Desc1",
-        "ImageUrl": "Img1",
-        "AudioUrl": "https://drive.google.com/drive/folders/1WVz2KRcQrAjikX2rj6oL04nWrNesP5Qi"
+        "Date": "2025-08-17",
+        "Artist": "Ikhras",
+        "Location": "Daltons - Brighton",
+        "Description": "Ikhras are a Brighton/London based hardcore band. They dedicate their music to talk about the Palestinian struggle. This is their set from Lyn's Fundraiser",
+        "ImageUrl": "https://ia601005.us.archive.org/22/items/ikhras-daltons-lyn-s-fundraiser-17.8.25/Lyns%20fundrasier%20-%20Daltons%20-%2017.8.25%20poster.jpeg?cnt=0",
+        "AudioUrl": "https://archive.org/download/ikhras-daltons-lyn-s-fundraiser-17.8.25/Ikhras%20-%20Daltons%20Lyn_s%20Fundraiser%2017.8.25.mp3"
     },
     {
         "ID": 1,
-        "Date": "03/04/05",
-        "Artist": "Artist2",
-        "Location": "Location2",
-        "Description": "Desc2",
-        "ImageUrl": "Img2",
-        "AudioUrl": "Aud2"
+        "Date": "2025-08-28",
+        "Artist": "Nancy Cancer",
+        "Location": "The Prince Albert - Brighton",
+        "Description": "This is Potentially the last Nancy Cancer show. Formed of four trans women they produce loud, snarky, transexual punk music. [BRICK] guitarist Hazel also plays bass in this band :)",
+        "ImageUrl": "https://ia800907.us.archive.org/24/items/nancy-cancer-last-show-the-prince-albert-28.8.25-1/Nancy%20Cancer%20-%20Last%20show%21-%20The%20Prince%20Albert%2028.8.25%281%29.jpeg?cnt=0",
+        "AudioUrl": "https://archive.org/download/nancy-cancer-last-show-the-prince-albert-28.8.25-1/Nancy%20Cancer%20-%20Last%20show%21-%20The%20Prince%20Albert%2028.8.25.mp3"
     },
     {
         "ID": 2,
-        "Date": "06/07/08",
-        "Artist": "Artist3",
-        "Location": "Location3",
-        "Description": "Desc3",
-        "ImageUrl": "Img3",
-        "AudioUrl": "Aud3"
+        "Date": "2025-06-17",
+        "Artist": "M. Woodroe",
+        "Location": "Rossi Bar - Brighton",
+        "Description": "M. Woodroe offer a dynamic sound, slow soft sections mixed with loud baritone guitar and peircing melodica. They always deliver an amazing live show.",
+        "ImageUrl": "https://ia601004.us.archive.org/29/items/m.-woodroe-rossi-bar-17.6.25/M.%20Woodroe%20-%20Rossi%20Bar%2017.6.25.jpg?cnt=0",
+        "AudioUrl": "https://archive.org/download/m.-woodroe-rossi-bar-17.6.25/M.%20Woodroe%20-%20Rossi%20Bar%2017.6.25.mp3"
     }
 ]
