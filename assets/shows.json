@@ -1,0 +1,101 @@
+[
+    {
+        "ShowID": 0,
+        "Visible": "Yes",
+        "Date": "2025-08-21",
+        "Venue": "The Cowley Club",
+        "City": "Brighton",
+        "Lineup": "",
+        "OtherDetails": "",
+        "TicketLink": "",
+        "VideoID": "DuONRldNowc"
+    },
+    {
+        "ShowID": 1,
+        "Visible": "Yes",
+        "Date": "2025-09-05",
+        "Venue": "Green Door Store",
+        "City": "Brighton",
+        "Lineup": "HIRS, Death Goals, Leibniz, Misgendered",
+        "OtherDetails": "",
+        "TicketLink": "https://deathbeforedetransition.bigcartel.com/product/hirs-death-goals-more-0509",
+        "VideoID": "6uxlc0xwQvE"
+    },
+    {
+        "ShowID": 2,
+        "Visible": "Yes",
+        "Date": "2025-09-19",
+        "Venue": "Camp Trans",
+        "City": "",
+        "Lineup": "",
+        "OtherDetails": "",
+        "TicketLink": "",
+        "VideoID": ""
+    },
+    {
+        "ShowID": 3,
+        "Visible": "Yes",
+        "Date": "2025-10-25",
+        "Venue": "Matchstick Piehouse",
+        "City": "Deptford",
+        "Lineup": "Milk Maiden, Moist Crevice, Operotica, Doll Coven, Velvet Dead, Craic Killers, M-G Dysfunction",
+        "OtherDetails": "",
+        "TicketLink": "",
+        "VideoID": ""
+    },
+    {
+        "ShowID": 4,
+        "Visible": "Yes",
+        "Date": "2025-10-31",
+        "Venue": "The Cowley Club",
+        "City": "Brighton",
+        "Lineup": "The Wokerati Party, The Glitterbombs",
+        "OtherDetails": "",
+        "TicketLink": "",
+        "VideoID": ""
+    },
+    {
+        "ShowID": 5,
+        "Visible": "Yes",
+        "Date": "2025-11-20",
+        "Venue": "Fuel",
+        "City": "Cardiff",
+        "Lineup": "Misgendered, Shishu, Perp Walk, Monika Badly",
+        "OtherDetails": "",
+        "TicketLink": "",
+        "VideoID": ""
+    },
+    {
+        "ShowID": 6,
+        "Visible": "Yes",
+        "Date": "2025-11-21",
+        "Venue": "",
+        "City": "Birmingham, TBC",
+        "Lineup": "Misgendered",
+        "OtherDetails": "",
+        "TicketLink": "",
+        "VideoID": ""
+    },
+    {
+        "ShowID": 7,
+        "Visible": "Yes",
+        "Date": "2025-11-23",
+        "Venue": "Hope & Ruin",
+        "City": "Brighton",
+        "Lineup": "Tension, Misgendered",
+        "OtherDetails": "",
+        "TicketLink": "",
+        "VideoID": ""
+    },
+    {
+        "ShowID": 8,
+        "Visible": "Yes",
+        "Date": "2025-12-17",
+        "Venue": "Matchstick Piehouse",
+        "City": "Deptford",
+        "Lineup": "",
+        "OtherDetails": "",
+        "TicketLink": "",
+        "VideoID": ""
+    }
+]
