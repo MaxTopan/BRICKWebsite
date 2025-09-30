@@ -5,15 +5,18 @@ fetch("assets/shows.json")
         let upcomingShowsDiv = document.getElementById("upcoming-shows");
         let pastShowsHtml = "";
         let upcomingShowsHtml = "";
-        let now = new Date();
+        let now = new Date(); now.setHours(0); now.setMinutes(0);
 
         shows.forEach(show => {
             if (show["Visible"] === "No") {
                 return;
             }
 
-            // ShowID,Visible,Date,Venue,City,Lineup,OtherDetails,TicketLink
             let date = new Date(show["Date"]);
+            if (date === "undefined" || date == "Invalid Date") {
+                return;
+            }
+
             let city = show["City"];
             let venue = show["Venue"];
             let lineup = show["Lineup"];
@@ -28,11 +31,12 @@ fetch("assets/shows.json")
             }
 
             if (videoID) {
-                videoHtml = `<div class="wrapper">
-                            <div class="h_iframe">
-                                <iframe height="2" width="2" src="http://www.youtube.com/embed/${videoID}" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>`
+                videoHtml = `
+                <div class="wrapper">
+                    <div class="h_iframe">
+                        <iframe height="2" width="2" src="http://www.youtube.com/embed/${videoID}" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>`
 
             }
 
@@ -63,5 +67,4 @@ fetch("assets/shows.json")
 
         pastShowsDiv.innerHTML = pastShowsHtml;
         upcomingShowsDiv.innerHTML = upcomingShowsHtml;
-    }
-    );
+    });
