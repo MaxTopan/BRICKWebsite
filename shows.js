@@ -1,73 +1,67 @@
-let pastShowsDiv;
-let upcomingShowsDiv;
-let now;
+fetch("assets/shows.json")
+    .then(res => res.json())
+    .then(shows => {
+        let pastShowsDiv = document.getElementById("past-shows");
+        let upcomingShowsDiv = document.getElementById("upcoming-shows");
+        let pastShowsHtml = "";
+        let upcomingShowsHtml = "";
+        let now = new Date();
 
-function preload() {
-    shows = loadTable("assets/shows.csv", "csv", "header");
-    pastShowsDiv = document.getElementById("past-shows");
-    upcomingShowsDiv = document.getElementById("upcoming-shows");
-    now = new Date();
-}
+        shows.forEach(show => {
+            if (show["Visible"] === "No") {
+                return;
+            }
 
-function setup() {
-    const rowCount = shows.getRowCount();
+            // ShowID,Visible,Date,Venue,City,Lineup,OtherDetails,TicketLink
+            let date = new Date(show["Date"]);
+            let city = show["City"];
+            let venue = show["Venue"];
+            let lineup = show["Lineup"];
+            let otherDetails = show["OtherDetails"];
+            let ticketLink = show["TicketLink"];
+            let ticketHtml = "";
+            let videoID = show["VideoID"];
+            let videoHtml = "";
 
-    let pastShowHtml = "";
-    let upcomingShowHtml = "";
+            if (ticketLink && date > now) {
+                ticketHtml = `<a href="${ticketLink}" target="_blank">Tix Here</a>`
+            }
 
-    for (let i = 0; i < rowCount; i++) {
-        if (shows.get(i, "Visible") === "No") {
-            continue;
-        }
-
-        // ShowID,Visible,Date,Location,Lineup,OtherDetails,TicketLink
-        let date = new Date(shows.get(i, "Date"));
-        let city = shows.get(i, "City");
-        let venue = shows.get(i, "Venue")
-        let lineup = shows.get(i, "Lineup");
-        let otherDetails = shows.get(i, "OtherDetails");
-        let ticketLink = shows.get(i, "TicketLink");
-        let ticketHtml = "";
-        let videoID = shows.get(i, "VideoID");
-        let videoHtml = "";
-
-        if (ticketLink && date > now) {
-            ticketHtml = `<a href="${ticketLink}" target="_blank">Tix Here</a>`
-        }
-
-        if (videoID) {
-            videoHtml = `<div class="wrapper">
+            if (videoID) {
+                videoHtml = `<div class="wrapper">
                             <div class="h_iframe">
                                 <iframe height="2" width="2" src="http://www.youtube.com/embed/${videoID}" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>`
 
-        }
+            }
 
-        if (lineup) {
-            lineup = "With: " + lineup;
-        }
+            if (lineup) {
+                lineup = "With: " + lineup;
+            }
 
-        if (city) {
-            city = " - " + city;
-        }
+            if (venue && city) {
+                city = " - " + city;
+            }
 
-        let currHtml = `
-        <div class="show-details">
-            <p>${date.toLocaleDateString()}</p>
-            <p>${venue}${city}</p>
-            <p>${lineup}</p>
-            <p>${otherDetails}</p>
-            ${ticketHtml}
-            ${videoHtml}
-        </div>`
+            let currHtml = `
+            <div class="show-details">
+                <p>${date.toLocaleDateString()}</p>
+                <p>${venue}${city}</p>
+                <p>${lineup}</p>
+                <p>${otherDetails}</p>
+                ${ticketHtml}
+                ${videoHtml}
+            </div>`
 
-        if (date < now) { // past shows
-            pastShowHtml = currHtml + pastShowHtml;
-        } else { // upcoming shows
-            upcomingShowHtml += currHtml;
-        }
+            if (date < now) { // past shows
+                pastShowsHtml = currHtml + pastShowsHtml;
+            } else { // upcoming shows
+                upcomingShowsHtml += currHtml;
+            }
+        });
+
+        pastShowsDiv.innerHTML = pastShowsHtml;
+        upcomingShowsDiv.innerHTML = upcomingShowsHtml;
     }
-    pastShowsDiv.innerHTML = pastShowHtml;
-    upcomingShowsDiv.innerHTML = upcomingShowHtml;
-}
+    );
