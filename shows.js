@@ -48,10 +48,14 @@ function setup() {
             lineup = "With: " + lineup;
         }
 
+        if (city) {
+            city = " - " + city;
+        }
+
         let currHtml = `
         <div class="show-details">
             <p>${date.toLocaleDateString()}</p>
-            <p>${venue} - ${city}</p>
+            <p>${venue}${city}</p>
             <p>${lineup}</p>
             <p>${otherDetails}</p>
             ${ticketHtml}
