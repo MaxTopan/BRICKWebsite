@@ -7,6 +7,7 @@ fetch("assets/shows.json")
         let upcomingShowsHtml = "";
         let now = new Date(); now.setHours(0); now.setMinutes(0);
 
+        shows.sort((a, b) => new Date(a.Date) - new Date(b.Date));
         shows.forEach(show => {
             if (show["Visible"] === "No") {
                 return;
