@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }}</title>
+
+        <link rel="icon" type="image/x-icon" href="assets/brickfavicon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        {% for linksrc in links %}<link rel="stylesheet" type="text/css" href="{{ linksrc }}{{ nocache }}">
+        {% endfor %}
+        {% for script in scripts %}<script src="{{ script }}{{ nocache }}"></script>
+        {% endfor %}
+    </head>
+
+    <body>
+        <h2 style="margin-bottom:0;">WE ARE [BRICK]</h2>
+        <h3 style="margin-top:0.4rem;">TRANSFEMINIST HARDCORE</h3>
+        <a href="mailto:brick_tfhc@protonmail.me">brick_tfhc@protonmail.me</a>
+        <br/> <br/>
+        {% include 'navBar.njk' %}
+
+        {{ content | safe }}
+    </body>
+</html>

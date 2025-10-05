@@ -8,9 +8,9 @@
 
         <link rel="icon" type="image/x-icon" href="assets/brickfavicon.png">
         <link rel="stylesheet" type="text/css" href="style.css">
-        {% for linksrc in links %}<link rel="stylesheet" type="text/css" href="{{ linksrc }}">
+        {% for linksrc in links %}<link rel="stylesheet" type="text/css" href="{{ linksrc }}{{ nocache }}">
         {% endfor %}
-        {% for script in scripts %}<script src="{{ script }}"></script>
+        {% for script in scripts %}<script src="{{ script }}{{ nocache }}"></script>
         {% endfor %}
     </head>
 

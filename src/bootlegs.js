@@ -1,10 +1,8 @@
-fetch("assets/bootlegs.json")
+fetch(`assets/bootlegs.json?nocache=${Date.now()}`)
     .then(res => res.json())
     .then(bootlegs => {
         const container = document.getElementById("main-container");
         bootlegs.forEach(bootleg => {
-            /* ID, Date, Artist, Location, Description, ImageUrl, AudioUrl */
-
             const date = new Date(bootleg["Date"]);
             const artist = bootleg["Artist"];
             const location = bootleg["Location"];

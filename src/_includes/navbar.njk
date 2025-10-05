@@ -1,0 +1,18 @@
+<div id="navbar">
+    <ul>
+        <li><a = href="index.html">Home</a></li>
+        {% for pagesrc in webpages.main %}
+            <li><a href="{{pagesrc}}.html">{{pagesrc | title}}</a></li>
+        {% endfor %}
+        
+        <li class="dropdown">
+            <a class="dropdown-link" href="more.html">More</a>
+            <div class="dropdown-content">
+                {% for pagesrc in webpages.more %}
+                    <a href="{{pagesrc}}.html">{{pagesrc | title }}</a>
+                {% endfor %}
+                <a href="https://bricktfhc.atabook.org/">Guestbook</a>
+            </div>
+        </li>
+    </ul>
+</div>

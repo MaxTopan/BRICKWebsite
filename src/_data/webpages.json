@@ -1,0 +1,11 @@
+{
+    "main": [
+        "music",
+        "shows"
+    ],
+    "more": [
+        "merch",
+        "photos",
+        "bootlegs"
+    ]
+}
