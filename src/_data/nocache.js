@@ -1,1 +1,1 @@
-module.exports = () => "?nocache=" + Date.now();
+module.exports = "?nocache=" + Date.now();

@@ -1,4 +1,5 @@
-fetch(`assets/photos.json?nocache=${Date.now()}`)
+const nocache = document.getElementById("nocache");
+fetch(`assets/photos.json${nocache.value}`)
   .then(res => res.json())
   .then(files => {
     const photosContainer = document.getElementById("photos-container");

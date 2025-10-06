@@ -1,4 +1,5 @@
-fetch(`assets/shows.json?nocache=${Date.now()}`)
+const nocache = document.getElementById("nocache");
+fetch(`assets/shows.json${nocache.value}`)
     .then(res => res.json())
     .then(shows => {
         let pastShowsDiv = document.getElementById("past-shows");

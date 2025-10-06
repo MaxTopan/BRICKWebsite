@@ -10,6 +10,8 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         {% for linksrc in links %}<link rel="stylesheet" type="text/css" href="{{ linksrc }}{{ nocache }}">
         {% endfor %}
+        
+        <param id="nocache" value="{{nocache}}"></param>
         {% for script in scripts %}<script src="{{ script }}{{ nocache }}"></script>
         {% endfor %}
     </head>
