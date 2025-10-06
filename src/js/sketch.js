@@ -3,7 +3,7 @@ let boundSize = 50;
 let links;
 
 function preload() {
-  links = loadStrings("assets/externallinks.txt");
+  links = loadStrings("assets/data/externallinks.txt");
   let canvas = createCanvas();
   canvas.parent('overlay-container');
 }
