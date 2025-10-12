@@ -1,5 +1,4 @@
-const nocache = document.getElementById("nocache");
-fetch(`assets/data/shows.json${nocache.value}`)
+fetch(`assets/data/shows.json?nocache=${Date.now()}`)
     .then(res => res.json())
     .then(shows => {
         let pastShowsDiv = document.getElementById("past-shows");
@@ -29,7 +28,7 @@ fetch(`assets/data/shows.json${nocache.value}`)
             let videoHtml = "";
 
             if (ticketLink && date > now) {
-                ticketHtml = `<a href="${ticketLink}" target="_blank">Tix Here</a>`
+                ticketHtml = `<a class="ticket-link" href="${ticketLink}" target="_blank">Tix Here</a>`
             }
 
             if (videoID) {

@@ -6,6 +6,16 @@
     padding-bottom: 4vh;
 }
 
+.ticket-link {
+    background-color: darkgreen;
+    color: black;
+}
+.ticket-link:hover {
+    background-color: white;
+    color: darkgreen;
+}
+
+/* VIDEO STUFF */
 .wrapper {
     width: 80%;
     max-width: 600px;

@@ -1,5 +1,5 @@
-const nocache = document.getElementById("nocache");
-fetch(`assets/data/bootlegs.json${nocache.value}`)
+const nocache = `?nocache=${Date.now()}`;
+fetch(`assets/data/bootlegs.json${nocache}`)
     .then(res => res.json())
     .then(bootlegs => {
         const container = document.getElementById("main-container");
