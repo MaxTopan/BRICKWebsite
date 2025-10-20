@@ -13,30 +13,6 @@ p {
   padding: 0;
 }
 
-/* Container for overlapping elements
-#overlay-container {
-  position: relative;
-  width: 45%;
-  margin: auto;
-}
-
-#sigil,
-canvas {
-  top: 0;
-  width: 100%;
-  display: block;
-}
-
-#sigil {
-  z-index: 0;
-  padding-bottom: 3vw;
-  width: 70%;
-  min-width: 200px;
-  display:flex;
-  justify-content: center;
-  margin: auto;
-} */
-
 #overlay-container {
   position: relative;
   width: 45%;
