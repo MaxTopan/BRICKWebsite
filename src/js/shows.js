@@ -26,6 +26,10 @@ fetch(`assets/data/shows.json?nocache=${Date.now()}`)
             let ticketHtml = "";
             let videoID = show["VideoID"];
             let videoHtml = "";
+            
+            let image = show["Poster"];
+            let imagePath = `assets/data/showposters/${show["Poster"]}`;
+            let imageHtml = "";
 
             if (ticketLink && date > now) {
                 ticketHtml = `<a class="ticket-link" href="${ticketLink}" target="_blank">Tix Here</a>`
@@ -49,15 +53,39 @@ fetch(`assets/data/shows.json?nocache=${Date.now()}`)
                 city = " - " + city;
             }
 
+            if (image) {
+                imageHtml = `<img class="show-poster" src="${imagePath}" />`
+            }
+
             let currHtml = `
-            <div class="show-details">
-                <p>${date.toLocaleDateString()}</p>
-                <p>${venue}${city}</p>
-                <p>${lineup}</p>
-                <p>${otherDetails}</p>
-                ${ticketHtml}
-                ${videoHtml}
-            </div>`
+            <div class="show-details-container">
+                ${imageHtml}
+                <div class="show-details">
+                    <p>${date.toLocaleDateString()}</p>
+                    <p>${venue}${city}</p>
+                    <p>${lineup}</p>
+                    <p>${otherDetails}</p>
+                    ${ticketHtml}
+                </div>
+            </div>
+            ${videoHtml}`
+
+            // let currHtml = `
+            // <tr class="show-details-container">
+            //     <td>
+            //         <img class="show-poster" src="${imagePath}" />
+            //     </td>
+            //     <td>
+            //     <div class="show-details">
+            //         <p>${date.toLocaleDateString()}</p>
+            //         <p>${venue}${city}</p>
+            //         <p>${lineup}</p>
+            //         <p>${otherDetails}</p>
+            //         ${ticketHtml}
+            //     </div>
+            //     </td>
+            //     </tr>
+            //     ${videoHtml}`
 
             if (date < now) { // past shows
                 pastShowsHtml = currHtml + pastShowsHtml;
@@ -66,6 +94,6 @@ fetch(`assets/data/shows.json?nocache=${Date.now()}`)
             }
         });
 
-        pastShowsDiv.innerHTML = pastShowsHtml;
-        upcomingShowsDiv.innerHTML = upcomingShowsHtml;
+        pastShowsDiv.innerHTML = `<table class="past-table"> ${pastShowsHtml} </table>`;
+        upcomingShowsDiv.innerHTML = `<table class="upcoming-table"> ${upcomingShowsHtml} </table>`;
     });
